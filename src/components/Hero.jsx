@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import { FiPlay, FiArrowRight } from 'react-icons/fi'
-import { Link } from 'react-scroll'
 import heroImage from '../assets/hero-image.png'
 
 const Hero = () => {
@@ -10,13 +9,6 @@ const Hero = () => {
   useEffect(() => {
     setIsVisible(true);
   }, []);
-
-  const scrollToSection = (sectionId) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
 
   return (
     <section
@@ -62,23 +54,25 @@ const Hero = () => {
               {/* CTA Buttons */}
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                 <motion.div whileHover={{ y: -3 }} whileTap={{ scale: 0.98 }}>
-                  <button
-                    onClick={() => scrollToSection('services')}
+                  <a
+                    href="#"
                     className="group inline-flex items-center px-8 py-3.5 bg-gradient-to-r from-pink-500 to-purple-600 text-white font-medium rounded-lg shadow-sm hover:shadow-md transition-all duration-300 cursor-pointer"
                   >
-                    <span>Explore Services</span>
+                    <span>Get Service</span>
                     <FiArrowRight className="ml-2 group-hover:translate-x-1 transition-transform duration-300" />
-                  </button>
+                  </a>
                 </motion.div>
 
                 <motion.div whileHover={{ y: -3 }} whileTap={{ scale: 0.98 }}>
-                  <button
-                    onClick={() => scrollToSection('contact')}
+                  <a
+                    href="https://www.youtube.com/@Lexiontech" // Replace with your actual demo URL
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="group inline-flex items-center px-8 py-3.5 bg-white text-slate-700 font-medium rounded-lg shadow-sm hover:shadow-md border border-pink-200 hover:border-pink-300 transition-all duration-300 cursor-pointer"
                   >
                     <FiPlay className="mr-2 text-pink-500" />
                     <span>Watch Demo</span>
-                  </button>
+                  </a>
                 </motion.div>
               </div>
             </motion.div>
@@ -89,7 +83,7 @@ const Hero = () => {
             <img
               src={heroImage}
               alt="Hero"
-              // className="w-full max-w-md rounded-3xl shadow-lg"
+              className="w-full max-w-md"
             />
           </div>
         </div>
