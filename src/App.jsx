@@ -34,7 +34,7 @@ function App() {
             <div className="flex flex-col items-center space-y-4">
               {/* Image loader - make sure loader.gif exists in your public folder */}
               <img
-                src="../src/assets/logo load.png"
+                src="../src/assets/logo.jpg"
                 alt="Loading..."
                 className="w-24 h-24"
               />
