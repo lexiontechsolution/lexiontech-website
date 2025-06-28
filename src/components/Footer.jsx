@@ -61,19 +61,19 @@ const Footer = () => {
                 <FiFacebook className="w-5 h-5" />
               </a>
               <a
-                href="#"
+                href="https://x.com/Lexiontech"
                 className="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center text-slate-400 hover:text-white hover:bg-pink-300 transition-all duration-300"
               >
                 <FiTwitter className="w-5 h-5" />
               </a>
               <a
-                href="#"
+                href="https://www.linkedin.com/company/lexiontech/"
                 className="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center text-slate-400 hover:text-white hover:bg-pink-400 transition-all duration-300"
               >
                 <FiLinkedin className="w-5 h-5" />
               </a>
               <a
-                href="#"
+                href="https://www.instagram.com/lexiontech/"
                 className="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center text-slate-400 hover:text-white hover:bg-pink-500 transition-all duration-300"
               >
                 <FiInstagram className="w-5 h-5" />
