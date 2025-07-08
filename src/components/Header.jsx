@@ -91,7 +91,7 @@ const Header = () => {
           {/* CTA Button */}
           <div className="hidden lg:block">
             <motion.a
-              href="tel:+916380853637"
+              href="tel:+9181248 45698"
               className="relative inline-flex items-center px-6 py-2.5 bg-gradient-to-r from-pink-400 to-purple-500 text-white font-medium rounded-lg shadow-sm hover:shadow-md transition-all duration-300 group overflow-hidden border border-pink-300"
               whileHover={{ y: -2 }}
               whileTap={{ scale: 0.98 }}
@@ -150,7 +150,7 @@ const Header = () => {
                   </motion.div>
                 ))}
                 <motion.a
-                  href="tel:+916380853637"
+                  href="tel:+9181248 45698"
                   className="mt-3 inline-flex items-center justify-center px-6 py-3 bg-gradient-to-r from-pink-400 to-purple-500 text-white font-medium rounded-lg shadow-sm text-sm tracking-wide"
                   initial={{ opacity: 0, y: 10 }}
                   animate={{ opacity: 1, y: 0 }}
