@@ -1,4 +1,5 @@
 import InternshipProgram from './Internship/intro';
+import logo from '../assets/logo load.png'
 import { motion, AnimatePresence } from 'framer-motion';
 import { 
   FiMail, FiPhone, FiMapPin, FiSend, FiMessageSquare, FiClock,
@@ -284,23 +285,30 @@ const App = () => {
         <div className="container mx-auto px-6 lg:px-8">
           <div className="flex justify-between items-center h-20">
             {/* Logo */}
-            <motion.div 
-              className="flex items-center space-x-3"
-              whileHover={{ scale: 1.02 }}
-              transition={{ duration: 0.2 }}
-            >
-              <div className="w-10 h-10 bg-gradient-to-br from-pink-400 to-purple-500 rounded-xl flex items-center justify-center shadow-md">
-                <span className="text-white font-bold text-lg">L</span>
-              </div>
-              <div className="flex flex-col">
-                <span className="text-2xl font-bold text-slate-900 tracking-tight">
-                  LexionTech
-                </span>
-                <span className="text-[10px] text-slate-500 -mt-1 tracking-wider uppercase">
-                  Digital Solutions
-                </span>
-              </div>
-            </motion.div>
+            {/* Logo */}
+          <motion.div 
+            className="flex items-center space-x-3"
+            whileHover={{ scale: 1.02 }}
+            transition={{ duration: 0.2 }}
+          >
+            <div className="w-10 h-10 flex items-center justify-center">
+              {/* Replace with your actual logo image */}
+              <img 
+                src={logo} 
+                alt="LexionTech Logo" 
+                className="w-full h-full object-contain"
+              />
+            </div>
+            <div className="flex flex-col">
+              <span className="text-2xl font-bold text-slate-900 tracking-tight">
+                LexionTech
+              </span>
+              <span className="text-[10px] text-slate-500 -mt-1 tracking-wider uppercase">
+                Digital Solutions
+              </span>
+            </div>
+          </motion.div>
+
 
             {/* Desktop Navigation */}
             <nav className="hidden lg:flex items-center space-x-8">
@@ -1374,64 +1382,69 @@ const App = () => {
           <div className="grid grid-cols-1 lg:grid-cols-4 gap-12 mb-16">
             {/* Company Info */}
             <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
-              viewport={{ once: true }}
-              className="mb-8"
-            >
-              <div className="flex items-center mb-6">
-                <div className="w-10 h-10 bg-gradient-to-br from-pink-200 to-pink-300 rounded-xl flex items-center justify-center mr-3">
-                  <span className="text-white font-bold text-lg">L</span>
-                </div>
-                <span className="text-2xl font-bold text-white">LexionTech</span>
-              </div>
-              <p className="text-slate-400 max-w-xs mb-6 leading-relaxed">
-                Simplifying technology for businesses of all scales to shape a smarter digital future.
-              </p>
-              
-              <div className="flex space-x-4 mb-8">
-                <a
-                  href="#"
-                  className="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center text-slate-400 hover:text-white hover:bg-pink-200 transition-all duration-300"
-                >
-                  <FiFacebook className="w-5 h-5" />
-                </a>
-                <a
-                  href="https://x.com/Lexiontech01"
-                  className="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center text-slate-400 hover:text-white hover:bg-pink-300 transition-all duration-300"
-                >
-                  <FiTwitter className="w-5 h-5" />
-                </a>
-                <a
-                  href="https://www.linkedin.com/company/lexiontech"
-                  className="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center text-slate-400 hover:text-white hover:bg-pink-400 transition-all duration-300"
-                >
-                  <FiLinkedin className="w-5 h-5" />
-                </a>
-                <a
-                  href="https://www.instagram.com/lexiontech/"
-                  className="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center text-slate-400 hover:text-white hover:bg-pink-500 transition-all duration-300"
-                >
-                  <FiInstagram className="w-5 h-5" />
-                </a>
-              </div>
-              
-              <div className="space-y-3">
-                <div className="flex items-center text-slate-400">
-                  <FiMail className="w-5 h-5 mr-3 text-pink-300" />
-                  <span>lexiontechsolution@gmail.com</span>
-                </div>
-                <div className="flex items-center text-slate-400">
-                  <FiPhone className="w-5 h-5 mr-3 text-pink-300" />
-                  <span>+91 63808 53637</span>
-                </div>
-                <div className="flex items-start text-slate-400">
-                  <FiMapPin className="w-5 h-5 mr-3 mt-1 text-pink-300" />
-                  <span>Coimbatore, Tamil Nadu, India</span>
-                </div>
-              </div>
-            </motion.div>
+  initial={{ opacity: 0, y: 20 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.5 }}
+  viewport={{ once: true }}
+  className="mb-8"
+>
+  <div className="flex items-center mb-6">
+    <div className="w-10 h-10 rounded-xl flex items-center justify-center mr-3">
+      {/* Replace with your actual logo image */}
+      <img 
+        src={logo} 
+        alt="LexionTech Logo" 
+        className="w-full h-full object-contain"
+      />
+    </div>
+    <span className="text-2xl font-bold text-white">LexionTech</span>
+  </div>
+  <p className="text-slate-400 max-w-xs mb-6 leading-relaxed">
+    Simplifying technology for businesses of all scales to shape a smarter digital future.
+  </p>
+  
+  <div className="flex space-x-4 mb-8">
+    <a
+      href="#"
+      className="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center text-slate-400 hover:text-white hover:bg-pink-200 transition-all duration-300"
+    >
+      <FiFacebook className="w-5 h-5" />
+    </a>
+    <a
+      href="https://x.com/Lexiontech01"
+      className="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center text-slate-400 hover:text-white hover:bg-pink-300 transition-all duration-300"
+    >
+      <FiTwitter className="w-5 h-5" />
+    </a>
+    <a
+      href="https://www.linkedin.com/company/lexiontech"
+      className="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center text-slate-400 hover:text-white hover:bg-pink-400 transition-all duration-300"
+    >
+      <FiLinkedin className="w-5 h-5" />
+    </a>
+    <a
+      href="https://www.instagram.com/lexiontech/"
+      className="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center text-slate-400 hover:text-white hover:bg-pink-500 transition-all duration-300"
+    >
+      <FiInstagram className="w-5 h-5" />
+    </a>
+  </div>
+  
+  <div className="space-y-3">
+    <div className="flex items-center text-slate-400">
+      <FiMail className="w-5 h-5 mr-3 text-pink-300" />
+      <span>lexiontechsolution@gmail.com</span>
+    </div>
+    <div className="flex items-center text-slate-400">
+      <FiPhone className="w-5 h-5 mr-3 text-pink-300" />
+      <span>+91 63808 53637</span>
+    </div>
+    <div className="flex items-start text-slate-400">
+      <FiMapPin className="w-5 h-5 mr-3 mt-1 text-pink-300" />
+      <span>Coimbatore, Tamil Nadu, India</span>
+    </div>
+  </div>
+</motion.div>
 
             {/* Links columns */}
             <div className="grid grid-cols-1 sm:grid-cols-3 lg:col-span-3 gap-8">
@@ -1480,16 +1493,16 @@ const App = () => {
               </motion.div>
               
               <div className="flex flex-wrap justify-center gap-4">
-                <a href="#" className="text-slate-500 hover:text-pink-300 text-sm">
+                <a  className="text-slate-500 hover:text-pink-300 text-sm">
                   Privacy Policy
                 </a>
-                <a href="#" className="text-slate-500 hover:text-pink-300 text-sm">
+                <a  className="text-slate-500 hover:text-pink-300 text-sm">
                   Terms of Service
                 </a>
-                <a href="#" className="text-slate-500 hover:text-pink-300 text-sm">
+                <a  className="text-slate-500 hover:text-pink-300 text-sm">
                   Cookie Policy
                 </a>
-                <a href="#" className="text-slate-500 hover:text-pink-300 text-sm">
+                <a  className="text-slate-500 hover:text-pink-300 text-sm">
                   GDPR Compliance
                 </a>
               </div>

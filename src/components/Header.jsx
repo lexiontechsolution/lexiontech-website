@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { FiMenu, FiX, FiArrowRight, FiPlay, FiCode, FiSmartphone, FiCloud, FiCheck, FiMonitor, FiEdit3, FiSearch, FiShoppingCart, FiDatabase, FiShield, FiZap, FiGlobe, FiTarget, FiTrendingUp, FiHeart, FiStar, FiUsers, FiAward } from 'react-icons/fi';
-import { FaLaptopCode, FaMobileAlt, FaServer, FaChartLine } from 'react-icons/fa';
-
+import { FiMenu, FiX, FiArrowRight } from 'react-icons/fi';
+import logo from '../assets/logo load.png'
 // Header Component
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -51,8 +50,13 @@ const Header = () => {
             whileHover={{ scale: 1.02 }}
             transition={{ duration: 0.2 }}
           >
-            <div className="w-10 h-10 bg-gradient-to-br from-pink-400 to-purple-500 rounded-xl flex items-center justify-center shadow-md">
-              <span className="text-white font-bold text-lg">L</span>
+            <div className="w-10 h-10 flex items-center justify-center">
+              {/* Replace with your actual logo image */}
+              <img 
+                src={logo}
+                alt="LexionTech Logo" 
+                className="w-full h-full object-contain"
+              />
             </div>
             <div className="flex flex-col">
               <span className="text-2xl font-bold text-slate-900 tracking-tight">
