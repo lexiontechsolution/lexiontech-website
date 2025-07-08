@@ -129,10 +129,10 @@ const App = () => {
   ];
 
   const stats = [
-    { value: '', label: 'Projects Completed', icon: <FiCheck className="w-4 h-4 text-pink-600" /> },
-    { value: '', label: 'Happy Clients', icon: <FaLaptopCode className="w-4 h-4 text-pink-600" /> },
-    { value: '', label: 'Support Available', icon: <FaServer className="w-4 h-4 text-pink-600" /> },
-    { value: '', label: 'Industry Experience', icon: <FaChartLine className="w-4 h-4 text-pink-600" /> },
+    { value: '', label: 'Successfully Delivered Projects', icon: <FiCheck className="w-4 h-4 text-pink-600" /> },
+    { value: '', label: 'Client Satisfaction Rate', icon: <FaLaptopCode className="w-4 h-4 text-pink-600" /> },
+    { value: '', label: 'Ongoing Support Availability', icon: <FaServer className="w-4 h-4 text-pink-600" /> },
+    { value: '', label: 'Years of Industry Expertise', icon: <FaChartLine className="w-4 h-4 text-pink-600" /> },
   ];
 
   const processSteps = [
