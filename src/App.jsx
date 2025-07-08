@@ -28,7 +28,7 @@ function App() {
             <div className="flex flex-col items-center space-y-4">
               {/* Make sure the image path is correct - adjusted from ../src/assets to direct path */}
               <img
-                src="/logo.jpg" // Assuming logo.jpg is in your public folder
+                src="../src/assets/logo.jpg" // Assuming logo.jpg is in your public folder
                 alt="Loading..."
                 className="w-24 h-24 object-contain" // Added object-contain for better image handling
               />
