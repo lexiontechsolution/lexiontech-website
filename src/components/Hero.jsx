@@ -1171,7 +1171,7 @@ const App = () => {
               viewport={{ once: true }}
               className="text-4xl md:text-5xl font-bold text-slate-900 mb-5"
             >
-              Let's Build <span className="bg-gradient-to-r from-pink-400 to-rose-500 bg-clip-text text-transparent">Together</span>
+              Let's Grow <span className="bg-gradient-to-r from-pink-400 to-rose-500 bg-clip-text text-transparent">Together</span>
             </motion.h2>
 
             <motion.p
