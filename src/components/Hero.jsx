@@ -59,7 +59,7 @@ const App = () => {
       `Email: ${formData.email}%0A` +
       `Subject: ${formData.subject}%0A` +
       `Message: ${formData.message}`;
-    window.open(`https://wa.me/916380853637?text=${whatsappMessage}`, '_blank');
+    window.open(`https://wa.me/8124845698?text=${whatsappMessage}`, '_blank');
   };
 
   const mainServices = [
@@ -333,7 +333,7 @@ const App = () => {
             {/* CTA Button */}
             <div className="hidden lg:block">
               <motion.a
-                href="tel:+916380853637"
+                href="tel:+9181248 45698"
                 className="relative inline-flex items-center px-6 py-2.5 bg-gradient-to-r from-pink-400 to-purple-500 text-white font-medium rounded-lg shadow-sm hover:shadow-md transition-all duration-300 group overflow-hidden border border-pink-300"
                 whileHover={{ y: -2 }}
                 whileTap={{ scale: 0.98 }}
@@ -392,7 +392,7 @@ const App = () => {
                     </motion.div>
                   ))}
                   <motion.a
-                    href="tel:+916380853637"
+                    href="tel:+9181248 45698"
                     className="mt-3 inline-flex items-center justify-center px-6 py-3 bg-gradient-to-r from-pink-400 to-purple-500 text-white font-medium rounded-lg shadow-sm text-sm tracking-wide"
                     initial={{ opacity: 0, y: 10 }}
                     animate={{ opacity: 1, y: 0 }}
@@ -1222,7 +1222,7 @@ const App = () => {
                     <div>
                       <h4 className="text-lg font-semibold text-slate-700 mb-1">Call Us</h4>
                       <a
-                        href="tel:+916380853637"
+                        href="tel:+9181248 45698"
                         className="text-lg text-pink-600 hover:text-rose-700 font-medium transition-colors"
                       >
                         +91 63808 53637
@@ -1249,7 +1249,7 @@ const App = () => {
                     <div>
                       <h4 className="text-lg font-semibold text-slate-700 mb-1">WhatsApp</h4>
                       <a
-                        href="https://wa.me/916380853637"
+                        href="https://wa.me/9181248 45698"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-lg text-pink-600 hover:text-rose-700 font-medium transition-colors"
