@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import Hero from './components/Hero';
 import Header from './components/Header'; // Make sure to import Header
+import logo from '../src/assets/logo load.png'
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -28,7 +29,7 @@ function App() {
             <div className="flex flex-col items-center space-y-4">
               {/* Make sure the image path is correct - adjusted from ../src/assets to direct path */}
               <img
-                src="../src/assets/logo.jpg" // Assuming logo.jpg is in your public folder
+                src={logo} // Assuming logo.jpg is in your public folder
                 alt="Loading..."
                 className="w-24 h-24 object-contain" // Added object-contain for better image handling
               />
