@@ -59,7 +59,7 @@ const App = () => {
       `Email: ${formData.email}%0A` +
       `Subject: ${formData.subject}%0A` +
       `Message: ${formData.message}`;
-    window.open(`https://wa.me/8124845698?text=${whatsappMessage}`, '_blank');
+    window.open(`https://wa.me/918124845698?text=${whatsappMessage}`, '_blank');
   };
 
   const mainServices = [
