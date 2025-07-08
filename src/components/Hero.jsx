@@ -1263,9 +1263,9 @@ const App = () => {
                 <div className="mt-12 pt-8 border-t border-slate-200">
                   <h4 className="text-xl font-semibold text-slate-800 mb-4 flex items-center">
                     <FiClock className="mr-2 text-pink-500" />
-                    Business Hours
+                    Work Type :
                   </h4>
-                  <p className="text-slate-600 mb-2">Monday - Friday: 9am - 6pm</p>
+                  <p className="text-slate-600 mb-2">Flexible Business Hours</p>
                 </div>
               </div>
             </motion.div>
