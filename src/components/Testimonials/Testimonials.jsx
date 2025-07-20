@@ -3,15 +3,15 @@ import { FiStar, FiLinkedin } from 'react-icons/fi';
 
 const Testimonials = () => {
   const testimonials = [
-    {
-      name: 'Sarah Chen',
-      company: 'Stratify Analytics',
-      position: 'VP of Engineering',
-      comment: 'LexionTech built our next-gen data platform with exceptional craftsmanship. Their team brought both technical depth and strategic thinking that elevated our entire approach.',
-      rating: 4,
-      linkedin: 'https://linkedin.com/in/sarahchen-stratify',
-      avatar: 'SC'
-    },
+   {
+  name: '	Mr. Attrait Dovin Fedrick',
+  company: 'International Journal of English for Academic Excellence (IJEAE)',
+  position: 'Board of Editors',
+  comment: 'LexionTech transformed our vision for IJEAE into a seamless, user-centric academic journal platform. Their dedication, technical expertise, and timely delivery helped us successfully launch a platform trusted by global researchers and scholars.',
+  rating: 5,
+  linkedin: 'https://www.linkedin.com/in/attrait-dovin-fedrick-s-735b73240/',
+  avatar: 'ADF'
+},
     {
       name: 'Michael Rodriguez',
       company: 'UrbanNest',
