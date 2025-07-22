@@ -7,7 +7,6 @@ import Testimonials from './components/Testimonials/Testimonials'
 import Contact from './components/Contact/Contact'
 import Footer from './pages/Footer'
 import { motion, AnimatePresence } from 'framer-motion'
-import InternshipSection from './components/Internship/InternshipSection'
 
 function App() {
   const [isLoading, setIsLoading] = useState(true)
@@ -49,7 +48,6 @@ function App() {
               <Services />
               <WhyChooseUs />
               <Testimonials />
-              <InternshipSection />
               <Contact />
             </main>
             <Footer />
