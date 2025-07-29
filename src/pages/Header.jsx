@@ -77,7 +77,7 @@ const Navbar = () => {
               />
             </div>
             <span className="text-xl font-bold text-gray-800 hidden sm:block">
-              Lexion<span className="text-blue-600">Tech</span>
+              Lexion<span className="text-pink-600">Tech</span>
             </span>
           </motion.div>
           
@@ -94,8 +94,8 @@ const Navbar = () => {
                   onClick={() => handleClick(item.section)}
                   className={`px-1 py-2 font-medium transition-colors ${
                     activeSection === item.section 
-                      ? 'text-blue-600' 
-                      : 'text-gray-700 hover:text-blue-600'
+                      ? 'text-pink-600' 
+                      : 'text-gray-700 hover:text-pink-600'
                   }`}
                 >
                   {item.name}
@@ -106,7 +106,7 @@ const Navbar = () => {
                 
                 {/* Animated underline */}
                 <motion.div
-                  className={`absolute bottom-0 left-0 h-0.5 bg-blue-600 ${
+                  className={`absolute bottom-0 left-0 h-0.5 bg-pink-600 ${
                     activeSection === item.section ? 'w-full' : 'w-0'
                   }`}
                   animate={{
@@ -120,7 +120,7 @@ const Navbar = () => {
             {/* CTA Button */}
             <motion.button
               onClick={() => handleClick('contact')}
-              className="px-6 py-2 bg-gradient-to-r from-blue-600 to-blue-500 text-white rounded-full font-medium shadow-lg hover:shadow-xl transition-all"
+              className="px-6 py-2 bg-gradient-to-r from-pink-600 to-pink-500 text-white rounded-full font-medium shadow-lg hover:shadow-xl transition-all"
               whileHover={{ y: -2, scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
             >
@@ -152,19 +152,19 @@ const Navbar = () => {
                 onClick={() => handleClick(item.section)}
                 className={`w-full text-left px-4 py-3 rounded-lg font-medium transition-colors flex items-center ${
                   activeSection === item.section 
-                    ? 'bg-blue-50 text-blue-600' 
+                    ? 'bg-blue-50 text-pink-600' 
                     : 'text-gray-700 hover:bg-gray-50'
                 }`}
               >
                 {item.name}
                 {activeSection === item.section && (
-                  <div className="ml-2 w-2 h-2 bg-blue-600 rounded-full"></div>
+                  <div className="ml-2 w-2 h-2 bg-pink-600 rounded-full"></div>
                 )}
               </button>
             ))}
             <button
               onClick={() => handleClick('contact')}
-              className="w-full mt-2 px-4 py-3 bg-gradient-to-r from-blue-600 to-blue-500 text-white rounded-lg font-medium shadow-md"
+              className="w-full mt-2 px-4 py-3 bg-gradient-to-r from-pink-600 to-pink-500 text-white rounded-lg font-medium shadow-md"
             >
               Get Started
             </button>
