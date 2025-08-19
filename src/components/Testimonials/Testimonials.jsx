@@ -7,7 +7,7 @@ const Testimonials = () => {
       name: 'Mr. Attrait Dovin Fedrick',
       company: 'International Journal of English for Academic Excellence (IJEAE)',
       position: 'Board of Editors',
-      comment: 'LexionTech transformed our vision for IJEAE into a seamless, user-centric academic journal platform. Their dedication, technical expertise, and timely delivery helped us successfully launch a platform trusted by global researchers and scholars.',
+      comment: 'From a call to reality! Sanjeev s team brought my e-journal vision to life with their expertise. Their professionalism, constant support, and effective communication built trust and ensured great results. A bold attempt turned into success thanks to their dedication. Highly recommend their services!',
       rating: 5,
       avatar: 'ADF',
       linkedin: 'https://www.linkedin.com/in/attrait-dovin-fedrick-s-735b73240/'
